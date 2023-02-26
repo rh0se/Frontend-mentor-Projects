@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    overflow-x: hidden;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.product-container {
+    background-color: hsl(0, 0%, 100%);
+    width: 45.9%;
+    margin: 3% auto 5%;
+    min-width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+@media (max-width: 1300px) {
+    .product-container {
+      flex-direction: column;
+    }
+    img {
+        content: url("images/image-product-mobile.jpg"); 
+    }
+  }
+.inner {
+    flex: 50%;
+}
+
+/* .image {
+    background-image: url("images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+} */
+
+.left {
+    margin: 15px auto 0;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+}
+
+
+
+h1 {
+    font-family: 'Montserrat';
+    margin: 20px 0;
+    text-align: left;
+    width: 96%;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 14.5px;
+    color: gray;
+    margin-bottom: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+p:not(.prices) {
+   margin-top: 20px;
+}
+.prices {
+    display: flex;
+   gap: 10px;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.old-price {
+    font-size: 14px;
+    align-self: flex-start;
+    margin-left: 3px;
+    text-decoration: line-through;
+    text-align-last: center;
+}
+
+button > span {
+    margin-left: 15px;
+}
+button {
+    display: block;
+    background: hsl(158, 36%, 37%);
+    border: solid hsl(158, 36%, 37%);
+    border-radius: 7px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 16px 10px 16px;
+    text-decoration: none;
+    width: 100%;
+}
+
+button:hover {
+    background-color: hsl(155, 38%, 20%);
+    border: solid hsl(155, 38%, 20%);
+}
+
+button:focus {
+    
+}
+
+.first {
+    letter-spacing: 4px;
+    font-family: 'Montserrat';
+    color: grey;
+    text-transform: uppercase;
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
