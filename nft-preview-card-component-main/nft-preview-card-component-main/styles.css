@@ -5,18 +5,22 @@
 }
 
 body {
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
     background-color: hsl(217, 54%, 11%);
     
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     border-radius: 10px;
     width: 350px;
     height: auto;
-    margin: 40px auto 0;
-    padding-bottom: 17px;
+    padding: 15px;
     background-color: hsl(216, 50%, 16%);
 }
 
@@ -24,12 +28,6 @@ body {
    width: 90%;
    margin: 5%;
    border-radius: 10px;
-}
-
-#nft-image:hover {
-    opacity: 0.25;
-    background-color: hsl(178, 100%, 50%);
-    cursor: pointer;
 }
 
 
@@ -114,4 +112,40 @@ p {
     width: 10%;
     border: 1px solid white;
     border-radius: 100%;
+}
+
+.card-image {
+    position: relative;
+    background-image: url('./images/image-equilibrium.jpg');
+    background-size: cover;
+    min-width: 300px;
+    min-height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.overlay:hover {
+    opacity: 0.3;
+    background-color: hsl(178, 100%, 50%);
+    background-image: url('./images/icon-view.svg') no-repeat center;
+
+}
+
+.overlay:hover > img {
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    width: 30px;
+    height: 30px;
+    
 }
