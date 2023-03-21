@@ -134,18 +134,23 @@ p {
     transition: .5s ease;
 }
 
-.overlay:hover {
-    opacity: 0.3;
-    background-color: hsl(178, 100%, 50%);
-    background-image: url('./images/icon-view.svg') no-repeat center;
-
+.overlay:hover{
+    
+    background-color: rgba(0, 255, 247, 0.5);
+    opacity: 0.9;
 }
 
-.overlay:hover > img {
+.eyes {
+    position: absolute;
+    top: 42%;
+    left: 42%;
+}
+
+/* .overlay:hover > img {
     position: absolute;
     top: 50%; right: 50%;
     transform: translate(50%,-50%);
     width: 30px;
     height: 30px;
     
-}
+} */
