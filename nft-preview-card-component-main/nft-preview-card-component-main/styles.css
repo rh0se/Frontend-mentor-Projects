@@ -72,27 +72,7 @@ p {
     text-align: right;
     justify-content: end;
 }
-/*#crypto {
-    color: hsl(178, 100%, 50%);
-    font-size: 16px;
-    width: 49%;
-}
 
-#time {
-    color: hsl(215, 51%, 70%);
-    width: 49%;
-    text-align: right;
-}
-
-#crypto svg {
-    height: 30px;
-    padding-top: 13px;
-}
-
-#time svg {
-    height: 30px;
-    padding-top: 14px;
-} */
 
 #creator {
     border-top: 1px solid hsl(215, 32%, 27%);
@@ -137,7 +117,7 @@ p {
 .overlay:hover{
     
     background-color: rgba(0, 255, 247, 0.5);
-    opacity: 0.9;
+    
 }
 
 .eyes {
