@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 20px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+main {
+ 
+     margin: 135px auto;
+     max-width: 600px;
+     background-color: white;
+}
+
+.flex-container {
+    min-width: 375px;
+    display: flex;
+    box-shadow: 0 10px 15px 10px hsl(221, 100%, 96%);
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.first {
+    /* width: 267px; Another way to make it responsive
+    flex-grow: 1; */
+    flex: 50%;
+    color: white;
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(252, 81%, 54%));
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+.first span, .first p, .flex-container h2 {
+    display: block;
+    text-align: center;
+}
+.flex-container h2 {
+    font-size: larger;
+}
+
+
+
+.header {
+    font-weight: 600;
+    color: hsl(241, 100%, 89%);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.result > .total {
+    color: hsl(241, 68%, 79%);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.major-score {
+    height: 120px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.result {
+    width: 145px;
+    margin: 0 auto;
+    padding: 30px;
+    height: 140px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.score {
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* .remark {
+    padding: 10px 29px;
+} */
+.remark p {
+    text-align: center;
+    padding-bottom: 25px;
+    color: hsl(241, 68%, 79%);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 45px 0;
+}
+
+.second {
+    flex: 50%;
+    /* width: 267px; */
+    padding-left: 35px;
+    border-top-right-radius: 20px;
+    padding-bottom: 30px;
+    /* flex-grow: 2; */
+}
+
+.summary{
+    width: 90%;
+    margin-right: 0;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: small;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    border: 3px solid hsla(0, 100%, 67%, 0.5);
+}
+
+.Memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.Memory > .subject {
+    color:hsl(39, 100%, 56%)
+}
+.summary .scores {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 11px;
+}
+
+.reaction > .subject {
+    color:hsl(0, 100%, 67%)
+}
+
+.summary > img {
+    width: 15px;
+    margin-right: 5px;
+    margin-bottom: -2px;
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.verbal > .subject {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.visual >.subject {
+    color: hsl(234, 85%, 45%)
+}
+
+.btn {
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 90%;
+    padding: 10px 0;
+    text-decoration: none;
+    margin-top: 16px;
+    border: 0;
+  }
+  
+  .btn:hover {
+    background-color: hsla(256, 72%, 46%, 1);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+@media (max-width: 700px) {
+    .first, .second{
+        flex: 100%;
+    }
+    .remark p {
+        padding: 10px 58px 0;
+    }
+
+    .flex-container {
+        border-radius: 0px;
+    }
+    .first {
+        border-radius: 0 0 20px 20px;
+    }
+
+    main {
+        margin-top: 0;
+    }
+}
