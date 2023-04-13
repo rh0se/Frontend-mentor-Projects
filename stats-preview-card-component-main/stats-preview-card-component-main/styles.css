@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter';
+    font-size: 15px;
+}
+
+main {
+    max-width: 1150px;
+    margin: 100px auto 0;
+    
+
+}
+
+.main-card {
+    display: flex;
+    border-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    flex-wrap: wrap-reverse;
+    overflow: hidden;
+}
+
+.stats-container {
+    width: 50%;
+    background-color: (244, 38%, 16%);
+    padding: 60px 80px 5px 50px;
+}
+
+.image-container {
+    width: 50%;
+    position: relative;
+    
+}
+
+.image-container> img {
+   width: 100%;
+   height: 100%;
+
+}
+.overlay {
+    position: absolute;
+    background-color: hsla(277, 64%, 61%, 0.5);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+h1 {
+   padding: 0 30px 0 0;
+   font-size: 2.3rem;
+    
+   /*  padding: 70px;
+    font-size: 2.5em; */
+}
+
+h1 > span {
+    color: hsl(277, 64%, 61%);
+}
+
+.paragraph {
+    margin: 30px 0;
+}
+
+.paragraph > p {
+    padding-right: 60px; 
+    line-height: 1.5em;
+    color: hsla(0, 0%, 100%, 0.75);
+
+}
+
+.stats-heading {
+    margin-top: 100px;
+    display: flex;
+    gap: 4.5em;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* padding-right: 70px; */
+}
+
+
+.stats-heading > p {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+ 
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.heading {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+
+    .image-container {
+        width: 100%;
+    }
+
+    img {
+        content: url(./images/image-header-mobile.jpg);
+        width: 100%;
+        height: auto;
+    }
+
+    .stats-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .stats-container > h1 {
+        font-size: 2em;
+        padding: 0 5px;
+        
+       /*  padding: 20px 14px 0;
+        margin: 0 6px; */
+        
+    }
+    
+
+    .paragraph > p {
+        /* padding-right: 0;
+        padding: 0 30px 0;
+        font-size: ; */
+        padding: 0 25px;
+        
+    }
+
+    main {
+        max-width: 90%;
+        text-align: center;
+
+    }
+    .stats-heading {
+        margin-top: 50px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .stats-heading > p {
+        margin-bottom: 23px;
+    }
+ 
+}
+    /* .main-card {
+        flex-wrap: wrap-reverse; 
+    }
+} */
