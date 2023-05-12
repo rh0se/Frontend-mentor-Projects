@@ -1,0 +1,165 @@
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$Transparent-white: hsla(0, 0%, 100%, 0.75);
+$Very-light-gray: hsl(0, 0%, 95%);
+
+@mixin bottom-radius {
+    border-radius: 0 0 10px 10px;
+} 
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px; 
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+main {
+   display: flex;
+   height: 600px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 20px 0;
+}
+
+.container {
+    max-width:900px;
+    border-radius: 10px;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+   align-items: center;
+    flex-wrap: wrap;
+    div {
+        width: 300px;
+        padding: 40px;
+        color: $Very-light-gray;
+    }
+    p {
+        color: $Transparent-white;
+        line-height: 1.6;
+        padding-right: 10px;
+        margin-bottom: 5em;
+        font-size: 1em;
+        font-weight: 300;
+        font-family: 'Lexend Deca', sans-serif; 
+    }
+
+}
+
+.more {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    background: white;
+    border: 0;
+    width: 145px;
+    border-radius: 28px;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.more:hover {
+    color: $Very-light-gray;
+    border: 2px solid $Very-light-gray;
+    cursor: pointer;
+    
+}
+
+.first-item {
+    background: $Bright-orange;
+    button {
+        color: $Bright-orange;
+        border: 2px solid $Bright-orange;
+    }
+    button:hover {
+        background: $Bright-orange;
+    }
+}
+
+.second-item {
+    background: $Dark-cyan;
+    button {
+        color: $Dark-cyan;
+        border: 2px solid $Dark-cyan;
+    }
+    button:hover {
+        background: $Dark-cyan;
+    }
+}
+
+.third-item {
+   background-color: $Very-dark-cyan;
+   
+   
+   button {
+        color: $Very-dark-cyan;
+        border: 2px solid $Very-dark-cyan;
+   }
+   button:hover {
+    background: $Very-dark-cyan;
+   }
+}
+
+
+
+@media (max-width : 900px) and (min-width: 600px) {
+    main {
+        height: 950px;
+    }
+    .third-item {
+        flex-basis: 600px;
+        @include bottom-radius;
+    }
+    .first-item {
+        border-radius: 10px 0 0 0;
+    }
+    .second-item {
+    border-radius: 0 10px 0 0;
+    }
+}
+
+ @media (max-width: 600px) {
+    main {
+        height: 1350px;
+    }
+    .container {
+
+        div {
+            padding: 35px;
+            p {
+                width: 230px;
+                padding-right: 5px;
+                margin-right: 100px;
+                line-height: 1.5;
+                margin-bottom: 2em;
+            }
+        }
+    }
+    .first-item {
+        border-radius: 10px 10px 0 0;
+    }
+    .third-item {
+        @include bottom-radius;
+    }
+} 
+
