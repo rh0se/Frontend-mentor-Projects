@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0, right 0 bottom 0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+     
+    height: auto;
+    padding-top: 20px;
+    padding-left: 0px;
+    
+
+}
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    max-width: 450px;
+    font-size: 3em;
+    padding-right: 70px;
+   
+    margin-bottom: 30px;
+   
+}
+
+.about {
+    max-width: 400px;
+    padding-right: 50px;
+}
+
+.right {
+    margin-top: 0;
+}
+
+.ratings {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    gap:20px;
+    width: min(370px, 80vw);
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 15px;
+    margin-right: 10px;
+    font-size: 1em;
+    padding: 10px 0 10px 30px;
+    border-radius: 5px;
+    
+}
+
+.rating-report {
+    
+    align-self: center;
+    color:  hsl(300, 43%, 22%);
+}
+
+.ratings:first-of-type {
+    margin-left: 30px;
+}
+.ratings:nth-of-type(2) {
+    
+    margin-left: 70px;
+}
+.ratings:nth-of-type(3) {
+    margin-left: 90px;
+
+}
+
+
+/* .top {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+     gap: 80px;
+} */
+
+
+
+/* .left {
+    color: hsl(300, 43%, 22%);
+    max-width: 410px;
+    padding-right: 50px;
+} */
+
+/* .about{
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.right {
+    margin-top: 15px;
+}
+.ratings {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    gap:20px;
+    width: min(380px, 80vw);
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding: 15px 0 15px 30px;
+    border-radius: 5px;
+}
+
+.rating-report {
+    
+    align-self: center;
+    color:  hsl(300, 43%, 22%);
+}
+.ratings:nth-of-type(2) {
+    margin-left: 35px;
+}
+.ratings:nth-of-type(3) {
+    margin-left: 70px;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.review {
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    width: min(300px, 80%);
+    border-radius: 5px;
+    background-color: hsl(300, 43%, 22%);
+    padding: 32px;
+}
+
+.review:nth-of-type(2) {
+    margin-top: 10px;
+}
+
+.review:nth-of-type(3) {
+    margin-top: 20px;
+}
+
+.review > p {
+    margin: 1em 0 0;
+    line-height: 1.2;
+    font-size: 0.9em;
+}
+
+.Buyer {
+    position: absolute;
+    top: 31px;
+    left: 70px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Buyer > span:nth-of-type(1) {
+    font-weight: 700;
+}
+
+.Buyer > span:nth-of-type(2) {
+    color: hsl(333, 80%, 67%);
+}
+
+.reviewer > img {
+    width: 40px;
+    height: auto;
+    border-radius: 100%;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+ */
+/* @media (max-width: 940px) { */
+  /*  body {
+    overflow-x: hidden;
+    width: 100vw;
+   }
+    */
+    
+    /* .top {
+      
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap:0;
+    }
+
+    .bottom {
+        justify-content: center;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 83.5vw;
+    }
+
+    h1 {
+        font-size: 2.4em;
+        width:88%;
+    }
+
+
+    .left, .right {
+        padding-right: 0;
+    }
+
+    .about {
+        width: 100%;
+        padding: 0 15px;
+    } 
+    .ratings {
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+
+    }
+    .ratings:nth-of-type(2) {
+        margin-left: 0;
+    }
+    .ratings:nth-of-type(3) {
+        margin-left: 0;
+    } */
+
+    /* .rating-report { */
+        /* display: block; */
+       /*  width: 100%;
+        margin-left: 0;
+    }
+
+    .review {
+        font-weight: 500;
+        padding: 39px;
+        font-size: 1em;
+    }
+    .Buyer {
+        position: absolute;
+        top: 45px;
+        left: 85px;
+    }
+
+    .review:nth-of-type(2) {
+        margin-top: 0;
+    }
+    
+    .review:nth-of-type(3) {
+        margin-top: 0;
+    }
+ 
+} */
