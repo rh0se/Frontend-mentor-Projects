@@ -1,0 +1,145 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('Poppins/Poppins-SemiBold.ttf')
+}
+@font-face {
+    font-family: 'Poppins-ExtraLight';
+    src: url('Poppins/Poppins-ExtraLight.ttf')
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.ttf')
+}
+
+body {
+    background: var(--Very-Light-Gray);
+    color: var(--Very-Dark-Blue);
+    font-size: 15px;
+}
+h1, h4 {
+    font-family: 'Poppins-SemiBold';
+}
+
+header {
+    width:min(500px, 95vw);
+    margin:3em auto;
+    text-align: center;
+    
+} 
+h1 span {
+    font-family: 'Poppins-ExtraLight';
+    font-weight: 200;
+    display: block;
+}
+h1 {
+    line-height: 2.5rem;
+    font-size: 1.67em;
+}
+
+p {
+    font-family: 'Poppins';
+    color: var(--Grayish-Blue);
+    font-size: 1em;
+}
+
+.about {
+    padding: 1em 2em;
+}
+
+
+section {
+    margin: auto;
+    display: grid;
+    gap: 2em;
+    width: 320px;
+}
+
+.feature {
+    background: white;
+    
+    border-radius: 5px;
+    padding: 2em;
+    justify-items: center;
+    align-items: center;
+}
+h4 {
+    margin-bottom: 0.5em
+}
+.role {
+    font-size: 0.9em;
+    margin-bottom: 2.5em;
+    line-height: 2;
+}
+
+img {
+    margin-left: 75%;
+}
+
+
+
+.one {
+    border-top: 3px solid var(--Cyan);
+}
+
+.two {
+    border-top: 3px solid var(--Red);
+}
+
+.three {
+    
+    border-top: 3px solid var(--Orange);
+}
+
+.four {
+    border-top: 3px solid var(--Blue); 
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 700px){
+    h1 {
+        font-size: 2em;
+    }
+    .about {
+        padding: 2em 3em;
+    }
+    section {
+        width: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .one, .four {
+        grid-row: 1 / 3;
+        align-self: center;
+        height: min-content;
+    }
+
+    .three {
+        grid-row: 2 / 3;
+    }
+
+    p, .role {
+        font-size: 0.8em;
+    }
+}
