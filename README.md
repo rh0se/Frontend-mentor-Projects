@@ -14,7 +14,7 @@ This repository contains some challenges from [Frontend Mentor](https://www.fron
 
 |Name|Difficulty| Technologies / Approaches |
 |---|---|---|
-|  [3-column-preview-card-component-main](https://github.com/rh0se/Frontend-mentor-Projects/tree/master/3-column-preview-card-component-main) | :star:   | HTML, SCSS |
+|  [3-column-preview-card-component-main](https://stellular-fenglisu-b8d774.netlify.app/) | :star:   | HTML, SCSS |
 |  [nft-preview-card-component-main](https://github.com/rh0se/Frontend-mentor-Projects/tree/master/nft-preview-card-component-main/nft-preview-card-component-main) | :star:   | HTML, CSS |
 |  [four-card-feature-section-master](https://github.com/rh0se/Frontend-mentor-Projects/tree/master/nft-preview-card-component-main/nft-preview-card-component-main) | :star:   | HTML, CSS |
 |  [product-preview-card-component-main](https://github.com/rh0se/Frontend-mentor-Projects/tree/master/nft-preview-card-component-main/nft-preview-card-component-main) | :star:   | HTML, CSS |
