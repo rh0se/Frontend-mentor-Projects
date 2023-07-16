@@ -23,10 +23,11 @@ body {
 main {
      
      /* margin: 135px auto; */
+     
      height: 600px;
      display: flex;
      justify-content: center;
-     align-items: center;
+     align-items: center; 
      background-color: white;
 }
 
@@ -35,6 +36,7 @@ main {
     box-shadow: 0 10px 15px 10px hsl(221, 100%, 96%);
     border-radius: 20px;
     flex-wrap: wrap;
+    /* width: min(600px, 100%); */
    
     
     
@@ -43,9 +45,9 @@ main {
 
 .first {
     width: 300px;
-    /* width: 267px; Another way to make it responsive
-    flex-grow: 1; */
-    /* flex: 50%; */
+    /* width: 267px;  *//* Another way to make it responsive */
+    /* flex-grow: 1; */
+    flex: 50%; 
     color: white;
     background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(252, 81%, 54%));
     border-radius: 20px;
@@ -115,12 +117,12 @@ h3 {
 .second {
     
 
-   /*  flex: 50%; */
+    /* flex: 50%;*/
     width: 300px; 
     padding-left: 35px;
     border-top-right-radius: 20px;
     padding-bottom: 30px;
-    /* flex-grow: 2; */
+    flex-grow: 2; 
 }
 
 .summary{
@@ -208,8 +210,7 @@ h3 {
   
 @media (max-width: 700px) {
     .first, .second{
-        flex: 100%;
-        
+        flex: 100%; 
     }
 
     
@@ -227,6 +228,11 @@ h3 {
 
     main {
         height: auto;
+        display: unset;
+    }
+
+    .summary {
+        width: min(92%, 550px);
     }
 
     .btn {
