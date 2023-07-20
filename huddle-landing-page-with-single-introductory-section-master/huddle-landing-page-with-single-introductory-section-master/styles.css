@@ -7,6 +7,7 @@
 }
 
 body{
+  font-size: 16px;
   padding: 20px 35px;
   background-image: url("images/bg-mobile.svg");
   background-color: hsl(257, 40%, 49%);
@@ -21,10 +22,15 @@ body{
 
 }
 
+header img {
+  height: 40px;
+  margin: 5px 0 25px;
+}
+
 main {
   display: grid;
   grid-auto-flow: row;
-  grid-template-rows: 280px 300px 90px;
+  grid-template-rows: 280px 290px 80px;
   row-gap: 25px;
 }
 
@@ -44,7 +50,7 @@ h1, .btn {
 
 .huddle-paragraph {
   line-height: 1.7;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .btn {
@@ -54,6 +60,11 @@ h1, .btn {
   width: 200px;
   border-radius: 100px;
   border: none;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: hsl(300, 69%, 71%);
 }
 
 .social-media {
@@ -71,30 +82,78 @@ h1, .btn {
     border: 1px solid;
     border-radius: 50%;
   }
-  
+}
+
+.social-media span:hover {
+  border-color: hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
 }
 
 
 
 
 .attribution { 
-  font-size: 11px; text-align: center; 
+  font-size: 11px; 
+  text-align: center;
+
 }
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: hsl(300, 69%, 71%);  
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   body {
     background-image: url("images/bg-desktop.svg");
     background-color: hsl(257, 40%, 49%);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: left top;
   /* background-position: center ; */
   background-attachment: fixed; 
   min-height: 100vh;
   color: white;
   font-family: 'Open Sans', sans-serif;
   }
+  header img {
+    height: 42px;
+    margin: 0;
+    padding-left: 30px;
+  }
+
+  main {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px 30px;
+    gap: 0;
+    padding: 25px 10px;
+  }
+
+  .register-item, .social-media{
+    grid-column: 2/3;
+  }
+  .illustration {
+    padding: 50px 0px;
+  }
+  .illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  h1 {
+    font-weight: 600;
+    width: 300px;
+  }
+
+  .register-item {
+    text-align: left;
+    padding: 90px 0px 50px 20px;
+  }
+
+  .huddle-paragraph, .social-media {
+    max-width: 465px;
+  }
+  .social-media {
+    place-self: end;
+  }
+  
 }
