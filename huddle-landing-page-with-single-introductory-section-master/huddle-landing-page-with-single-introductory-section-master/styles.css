@@ -117,12 +117,13 @@ h1, .btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
   }
 
   .illustration {
     width: 750px;
-    /* display: flex;
-    justify-content: center; */
+    /*display: flex;
+    justify-content: center;*/
     
   }
 
@@ -155,82 +156,36 @@ h1, .btn {
     width: 100%;
     align-self: flex-end;
     justify-content: flex-end;
-    margin-right: 100px;
+    margin-right: 70px;
   }
 
  
 }
-/* @media (min-width: 800px) {
-  body {
-    position: relative;
-    overflow-x: hidden;
-    background-image: url("images/bg-desktop.svg");
-    background-color: hsl(257, 40%, 49%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left top; */
-    /* background-position: center ; */
-    /* padding-top: 40px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    }
-    header img {
-      height: 42px;
-      margin: 0;
-      padding-left: 50px;
-    }
-  
-    main {
-      grid-auto-flow: column;
-      grid-template-columns: 700px 1fr;
-      grid-template-rows: 500px 1fr;
-      gap: 20px;
-      padding: 30px 20px;
-    }
-  
-    .register-item, .social-media{
-      grid-column: 2/3;
-    }
-    .illustration {
-      padding: 50px 0px;
-    }
-    .illustration img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-    h1 {
-      font-weight: 600;
-      width: 300px;
-    }
 
-  
-  
-    .register-item {
-      text-align: left;
-      padding: 150px 0px 50px 20px;
-    }
-  
-    .huddle-paragraph, .social-media {
-      max-width: 465px;
-    }
-    .social-media {
-      place-self: end;
-      
-    }
-    span {
-      position: absolute;
-      bottom: 20px;
-    }
-    .one {
-      right: 300px;
-    }
+@media screen and (min-width: 800px) and (max-width: 1360px) {
+  main {
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  h1, .huddle-paragraph {
+    width: 100%;
+  }
 
-    .two {
-      right: 250px;
-    }
-    .three {
-      right: 200px;
-    }
-    
-  } */
+  .register-item, .illustration {
+    text-align: center;
+    width: 50%;
+    margin: 0;
+  }
+
+  .illustration img {
+    margin: 0;
+  }
+
+  .social-media {
+    align-self: center;
+    justify-content: center;
+    margin: 0;
+  }
+}
