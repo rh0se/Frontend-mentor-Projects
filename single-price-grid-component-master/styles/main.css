@@ -13,32 +13,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1em;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
-  min-height: 444px;
   width: min(85%, 650px);
   display: grid;
   grid-auto-flow: row;
   grid-row: auto;
-  /*  margin-top: 2em; */
-  /*  @media (max-width: {
-
-   } */
+  margin-top: 2em;
 }
 @media (min-width: 600px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px auto;
+    min-height: 444px;
   }
 }
 
 .first-section {
   background: white;
-  border-radius: 5px 5px 0 0;
-  padding: 1em;
+  border-radius: 6px 6px 0 0;
+  padding: 1.5em 1em;
 }
 .first-section h2 {
   color: hsl(179, 62%, 43%);
@@ -72,7 +70,7 @@ body {
 .second-section {
   background: hsl(179, 62%, 43%);
   color: white;
-  padding: 1em;
+  padding: 1.5em 1em;
   line-height: 1.5;
 }
 .second-section h3 {
@@ -97,6 +95,7 @@ body {
   font-size: 0.9em;
   border-radius: 5px;
   border: none;
+  box-shadow: 0px 4px 15px 0 rgba(0, 0, 0, 0.2);
   background-color: hsl(71, 73%, 54%);
 }
 .second-section button:hover {
@@ -106,6 +105,7 @@ body {
 }
 @media (min-width: 600px) {
   .second-section {
+    border-bottom-left-radius: 6px;
     padding: 2em;
   }
 }
@@ -113,7 +113,8 @@ body {
 .third-section {
   background-color: hsla(179, 62%, 43%, 0.8);
   color: #fff;
-  padding: 1em;
+  padding: 1.5em 1em;
+  border-radius: 0 0 6px 6px;
 }
 .third-section h3 {
   margin-bottom: 0.8em;
@@ -125,6 +126,7 @@ body {
 }
 @media (min-width: 600px) {
   .third-section {
+    border-radius: 0 0 6px 0;
     padding: 2em;
   }
   .third-section h3 {
@@ -136,6 +138,7 @@ body {
 }
 
 .attribution {
+  color: hsl(179, 62%, 43%);
   font-size: 11px;
   text-align: center;
 }
