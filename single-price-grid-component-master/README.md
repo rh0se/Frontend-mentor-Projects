@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Single price grid component Solution](https://github.com/rh0se/Frontend-mentor-Projects/tree/master/single-price-grid-component-master)
+- Live Site URL: [Single price grid component](https://deft-melba-df8c1f.netlify.app/)
 
 ## My process
 
