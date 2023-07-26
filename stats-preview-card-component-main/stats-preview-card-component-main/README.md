@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](Screenshot.jpeg)
+![](Screenshot.png)
 
 
 ### Links
