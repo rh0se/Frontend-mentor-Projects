@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <header>
+      <div class="logo">
+          <img src="./images/logo.svg">
+      </div>
+    <ul class="header-list">
+      <li>Features</li>
+    <li>Team</li>
+    <li>Sign In</li>
+    </ul>
+    
+  </header>
+  
+  <main>
+    
+<section class="get-started">
+  <div class="illustration1-container illustration">
+        <img src="images/illustration-1.svg">
+  </div>
+  <div class="top-container">
+  <h1>All your files in one secure location, accessible anywhere.</h1>
+
+  <p>
+  Fylo stores your most important files in one secure location. 
+  Access them wherever you need, share and collaborate with friends, 
+  family, and co-workers.
+
+</p>
+  
+ <form class="email-form" id="get-started-form" autocomplete="off"  novalidate>
+  <input type="email" aria-label="Email" tabindex="1" name="mailInput" placeholder="Enter your email..." id="getStarted" class="get-started-input">
+  <button type="submit" id="getStarted-btn"><strong>Get Started</strong></button>
+ </form>
+ <span class="message" id="top-error" name="message"></span>
+ 
+</div>
+</section>
+<div class="curve-img">
+  <picture> <!-- used the picture and source elements with the img tag to display different images for mobile and desktop view-->
+    <source media="(min-width:768px)" srcset="./images/bg-curve-desktop.svg"></source>
+  <img src="./images/bg-curve-mobile.svg" alt="">
+</picture>
+</div>
+<section class="fylo-works">
+  <div class="illustration2-container illustration works-bg" >
+    <img src="./images/illustration-2.svg" alt="">
+  </div>
+  
+<div class="fylo-works-paragraph works-bg">
+  <h3>Stay productive, wherever you are</h3>
+  <div class="fylo-works-description">
+  <p>
+  Never let location be an issue when accessing your files. Fylo has you 
+  covered for all of your file storage needs.
+</p>
+<p>
+  Securely share files and folders with friends, family and colleagues for 
+  live collaboration. No email attachments required!
+</p>
+</div>
+<p class="fylo-work-link works-bg"><a>See how Fylo works</a><img src="./images/icon-arrow.svg" alt=""></p>
+<div class="works-bg article-container">
+<article class="ceo-message ">
+
+<div class="quote-container">
+  <img src="./images/icon-quotes.svg" alt="quote icon">
+</div>
+
+<p class="ceo-testimonial">
+Fylo has improved our team productivity by an order of magnitude. Since 
+making the switch our team has become a well-oiled collaboration machine.
+</p>
+<div class="ceo-profile">
+<img src="./images/avatar-testimonial.jpg" alt="ceo image">
+<p class="ceo-details"><span class="ceo-name">Kyle Burton</span>
+<span class="ceo-title">Founder & CEO, Huddle</span>
+</p>
+</div>
+</article>
+</div>
+
+</div> 
+</section>
+  
+<section class="access-signup">
+  <div class="access-container">
+  <h3>Get early access today</h3>
+
+ <p>
+  It only takes a minute to sign up and our free starter tier is extremely generous. ma
+  If you have any questions, our support team would be happy to help you.
+ </p> 
+</div>
+ <form class="access-form" id="early-access-form" autocomplete="off" novalidate>
+  <input type="email" placeholder="email@example.com" id="early-access" class="get-started-input" name="mailInput" aria-label="Email" tabindex="1">
+  <span class="message" id="access-error"></span>
+  <button type="submit" id="access-button">Get Started For Free</button>
+</form>
+
+
+</section>
+  
+
+  
+</main>
+<footer class="footer-container">
+  <div class="logo-container">
+    <img src="./images/logo.svg">
+  </div>
+ <div class="footer-links-wrapper">
+  <ul class="contact-details">
+    <li>
+      <img src="./images/icon-phone.svg">
+      <span>Phone: +1-543-123-4567</span></li>
+    <li><img src="./images/icon-email.svg">
+      <span>example@fylo.com</span></li>
+  </ul>
+  <ul class="pages-links">
+    <li>About Us</li>
+    <li>Jobs</li>
+    <li>Press</li>
+    <li>Blog</li>
+  </ul>
+  
+<ul class="pages-links2">
+  <li>Contact Us</li>
+  <li>Terms</li>
+  <li>Privacy</li>
+</ul>
+
+<ul class="social-media">
+  <li class="facebook"><a><i class="fa-brands fa-facebook-f fa-lg"></i></a></i></li>
+  <li class="twitter"><a><i class="fa-brands fa-twitter fa-lg"></i></a></i></li>
+  <li class="insta"><a><i class="fa-brands fa-instagram fa-lg"></i></a></i></li>
+</ul>
+</div>
+
+</footer>
+  <div class="project-details">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">RHOSE</a>.
+    </p>
+  </div>
+  <script src="https://kit.fontawesome.com/83b1563528.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
